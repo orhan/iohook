@@ -27,7 +27,7 @@ jobs:
         with:
           # Set registry to NPM instead of github packages for publication
           registry-url: 'https://registry.npmjs.org'
-          node-version: 14
+          node-version: 16
 
       - name: Setup Linux Dependencies
         if: startsWith(matrix.os, 'ubuntu')
@@ -39,7 +39,7 @@ jobs:
 
       # Build only if version tag is not present
       - name: Build
-        run: npm run build -- --all --msvs_version=2019
+        run: CXXFLAGS="--std=c++17" npm run build -- --all --msvs_version=2019
         if: startsWith(github.ref, 'refs/tags/v') != true
         env:
           ARCH: ${{ matrix.arch }}
