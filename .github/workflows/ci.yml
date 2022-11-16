@@ -39,7 +39,7 @@ jobs:
 
       # Build only if version tag is not present
       - name: Build
-        run: CXXFLAGS="--std=c++17" npm run build -- --all --msvs_version=2019
+        run: npm run build -- --all --msvs_version=2019
         if: startsWith(github.ref, 'refs/tags/v') != true
         env:
           ARCH: ${{ matrix.arch }}

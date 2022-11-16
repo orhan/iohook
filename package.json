@@ -16,8 +16,8 @@
   "types": "index.d.ts",
   "scripts": {
     "install": "node install.js",
-    "build": "node build.js --upload=false",
-    "build:ci": "node build.js --all",
+    "build": "cross-env CXXFLAGS='--std=c++17' node build.js --upload=false",
+    "build:ci": "cross-env CXXFLAGS='--std=c++17' node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
     "test": "jest",
     "lint:dry": "eslint --ignore-path .lintignore .",
@@ -61,6 +61,7 @@
     }
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "nugget": "^2.0.1",
     "pump": "^1.0.3",
     "rc": "^1.2.8",
