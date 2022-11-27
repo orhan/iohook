@@ -5,6 +5,13 @@
 To get the build to progress using C++17, instead use this build command:
 `CXXFLAGS="--std=c++17" node build.js --runtime electron --version 21.0.0 --abi 109 --upload=false`
 
+## Publishing a new version
+
+1. Make your change
+2. Commit your change
+3. `yarn publish` and bump version number
+4. `git push` and check that the build github action completes succesfully
+
 # iohook
 
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
