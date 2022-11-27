@@ -7,12 +7,12 @@ To get the build to progress using C++17, instead use this build command:
 # iohook
 
 [![NPM version](https://img.shields.io/npm/v/iohook?color=%230088FF)](https://www.npmjs.com/package/iohook)
-[![Release date](https://img.shields.io/github/release-date/wilix-team/iohook?color=%230088FF)](https://github.com/wilix-team/iohook/releases/latest)
-[![GitHub Super-Linter](https://github.com/wilix-team/iohook/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![CI](https://github.com/wilix-team/iohook/actions/workflows/ci.yml/badge.svg)](https://github.com/wilix-team/iohook/actions/workflows/ci.yml)
+[![Release date](https://img.shields.io/github/release-date/delewis13/iohook?color=%230088FF)](https://github.com/delewis13/iohook/releases/latest)
+[![GitHub Super-Linter](https://github.com/delewis13/iohook/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![CI](https://github.com/delewis13/iohook/actions/workflows/ci.yml/badge.svg)](https://github.com/delewis13/iohook/actions/workflows/ci.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?color=%23008880)](https://github.com/prettier/prettier)
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/iohookjs/Lobby)
-[![Issues](https://img.shields.io/github/issues-raw/wilix-team/iohook)](https://github.com/wilix-team/iohook/issues)
+[![Issues](https://img.shields.io/github/issues-raw/delewis13/iohook)](https://github.com/delewis13/iohook/issues)
 
 ## About
 
@@ -20,9 +20,9 @@ Node.js global native keyboard and mouse listener.
 
 This module can handle keyboard and mouse events via native hooks inside and outside your JavaScript/TypeScript application.
 
-Found a bug? Have an idea? Feel free to post an [issue](https://github.com/wilix-team/iohook/issues) or submit a [PR](https://github.com/wilix-team/iohook/pulls).
+Found a bug? Have an idea? Feel free to post an [issue](https://github.com/delewis13/iohook/issues) or submit a [PR](https://github.com/delewis13/iohook/pulls).
 
-**Check out the [documentation](https://wilix-team.github.io/iohook).**
+**Check out the [documentation](https://delewis13.github.io/iohook).**
 
 ## Platform support
 
@@ -59,7 +59,7 @@ A. We try to match the currently supported version of both [Node](https://nodejs
 
 ## Apps
 
-Are you using iohook in your project ? Please tell us in a [PR](https://github.com/wilix-team/iohook/pulls) so we an add it to the list !
+Are you using iohook in your project ? Please tell us in a [PR](https://github.com/delewis13/iohook/pulls) so we an add it to the list !
 
 - [Cortex](https://crtx.gg/)
 - [Tracklify](https://tracklify.com/)
