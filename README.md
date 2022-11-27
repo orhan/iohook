@@ -1,7 +1,8 @@
 # My notes
 
-To get the build to progress using C++17, instead use this build command:
+## Building on MAC
 
+To get the build to progress using C++17, instead use this build command:
 `CXXFLAGS="--std=c++17" node build.js --runtime electron --version 21.0.0 --abi 109 --upload=false`
 
 # iohook
