@@ -136,6 +136,9 @@ function build(runtime, version, abi) {
     let args = [
       'configure',
       'rebuild',
+      // Added to solve an issue that was appearing on M2 mac during build
+      // https://github.com/nodejs/node-gyp/issues/2673#issuecomment-1165324060
+      "--openssl_fips=''",
       '--target=' + version,
       '--arch=' + arch,
     ];

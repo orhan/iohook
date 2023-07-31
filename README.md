@@ -1,9 +1,21 @@
 # My notes
 
-## Building on MAC
+## Building on Intel MAC
 
 To get the build to progress using C++17, instead use this build command:
-`CXXFLAGS="--std=c++17" node build.js --runtime electron --version 21.0.0 --abi 109 --upload=false`
+`CXXFLAGS="--std=c++17" node build.js --runtime electron --version 11.1.0 --abi 85 --upload=false`
+
+See more: https://wilix-team.github.io/iohook/manual-build.html#macos
+
+## Tweaks to support M2 build
+
+First off, to get things working on arm64, had to update build.js as per: https://github.com/nodejs/node-gyp/issues/2673#issuecomment-1165324060
+
+Next, my node was for some reason running as x64. If you could get it to run as arm64, you could probably just run the build script as above. Personally I couldn't get that working, so instead I overwrote build.js and manually included `let arch = 'arm64'`, after which the build seemed to work.
+
+## After building
+
+The output will be put into `prebuilds` folder. Open up the zip and copy paste the relevant build files over to the node_modules/iohook of your project.
 
 ## Publishing a new version
 
