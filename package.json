@@ -15,7 +15,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "preinstall": "cross-env CXXFLAGS='--std=c++17' node build.js --upload=false",
+    "preinstall": "npm install && cross-env CXXFLAGS='--std=c++17' node build.js --upload=false",
     "install": "node install.js",
     "build": "cross-env CXXFLAGS='--std=c++17' node build.js --upload=false",
     "build:ci": "cross-env CXXFLAGS='--std=c++17' node build.js --all",
