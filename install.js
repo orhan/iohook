@@ -93,9 +93,24 @@ function install(runtime, abi, platform, arch, cb) {
     let targetFile = path.join(__dirname, 'builds', essential);
     let extract = tfs.extract(targetFile, options).on('entry', updateName);
 
+    console.log(
+      'PATH',
+      path.join(
+        process.env.PWD,
+        '../../',
+        'prebuilds',
+        currentPlatform + '.tar.gz'
+      )
+    );
+
     pump(
       fs.createReadStream(
-        path.join(__dirname, 'prebuilds', currentPlatform + '.tar.gz')
+        path.join(
+          process.env.PWD,
+          '../../',
+          'prebuilds',
+          currentPlatform + '.tar.gz'
+        )
       ),
       zlib.createGunzip(),
       extract,
