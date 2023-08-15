@@ -31,7 +31,7 @@ function install(runtime, abi, platform, arch, cb) {
 
   console.log('Downloading prebuild for platform:', currentPlatform);
   let downloadUrl =
-    'https://github.com/delewis13/iohook/releases/download/v' +
+    'https://github.com/orhan/iohook/releases/download/v' +
     pkgVersion +
     '/' +
     currentPlatform +
@@ -92,8 +92,9 @@ function install(runtime, abi, platform, arch, cb) {
     };
     let targetFile = path.join(__dirname, 'builds', essential);
     let extract = tfs.extract(targetFile, options).on('entry', updateName);
+
     pump(
-      fs.createReadStream(path.join(nuggetOpts.dir, nuggetOpts.target)),
+      fs.createReadStream('./prebuilds/' + currentPlatform + '.tar.gz'),
       zlib.createGunzip(),
       extract,
       function (err) {
